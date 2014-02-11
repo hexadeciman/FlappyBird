@@ -14,7 +14,7 @@ public class Bird {
     }
 
     //method that causes bird to fall
-    public void gravity{
+    public void update{
         gravity = -2;
 
         while (y >= 0){
