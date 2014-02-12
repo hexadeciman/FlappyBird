@@ -9,6 +9,9 @@ public class App {
         frame.setSize(500, 500);
         frame.setLocationRelativeTo(null);
 
+        Keyboard keyboard = Keyboard.getInstance();
+        frame.addKeyListener(keyboard);
+
         GamePanel panel = new GamePanel();
         frame.add(panel);
     }
