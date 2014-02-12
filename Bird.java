@@ -11,11 +11,11 @@ public class Bird {
         y = 300;
         width = 40;
         height = 40;
-        gravity = -2;
+        gravity = 2;
     }
 
     //method that causes bird to fall
-    public void update{
+    public void update () {
         y += gravity;
     }
 }
