@@ -18,13 +18,4 @@ public class Bird {
     public void update () {
         y += gravity;
     }
-
-    //method that causes bird to fall
-    public void gravity{
-        gravity = -2;
-
-        while (y >= 0){
-            y += gravity;
-        }
-    }
 }
