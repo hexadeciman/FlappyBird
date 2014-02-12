@@ -4,15 +4,17 @@ import java.awt.*;
 public class GamePanel extends JPanel implements Runnable {
 
     private Bird bird;
+    private Game game;
 
     public GamePanel () {
-        Game game = new Game();
+        game = new Game();
         bird = game.bird;
 
         new Thread(this).start();
     }
 
     public void update () {
+        game.update();
         repaint();
     }
 

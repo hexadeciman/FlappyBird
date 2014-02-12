@@ -5,4 +5,8 @@ public class Game {
     public Game () {
         bird = new Bird();
     }
+
+    public void update(){
+    	bird.update();
+    }
 }
