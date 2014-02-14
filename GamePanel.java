@@ -1,5 +1,6 @@
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.*;
 
 public class GamePanel extends JPanel implements Runnable {
 
@@ -24,7 +25,7 @@ public class GamePanel extends JPanel implements Runnable {
         g.setColor(Color.GREEN);
         g.fillRect(bird.x, bird.y, bird.width, bird.height);
     }
-
+    
     public void run () {
         try {
             while (true) {
