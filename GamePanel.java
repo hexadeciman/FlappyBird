@@ -22,7 +22,7 @@ public class GamePanel extends JPanel implements Runnable {
         super.paintComponent(g);
 
         g.setColor(Color.GREEN);
-        g.fillRect(bird.x, bird.y, bird.width, bird.height);
+        g.drawImage(bird.getImage(), bird.x, bird.y, null);
     }
 
     public void run () {

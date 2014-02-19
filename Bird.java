@@ -1,3 +1,5 @@
+import java.awt.Image;
+
 public class Bird {
 
     public int x;
@@ -5,6 +7,8 @@ public class Bird {
     public int width;
     public int height;
     public int gravity;
+
+    private Image image;
 
     public Bird () {
         x = 100;
@@ -17,5 +21,14 @@ public class Bird {
     //method that causes bird to fall
     public void update () {
         y += gravity;
+    }
+
+    public Image getImage () {
+
+        if (image == null) {
+            image = Util.loadImage("lib/bird.png");     
+        }
+        
+        return image;
     }
 }
