@@ -27,19 +27,21 @@ public class Keyboard implements KeyListener {
 	}
 	
 	public void keyReleased(KeyEvent e) {
-		if (e.getKeyCode() >= 0 && e.getKeyCode() < keys.length) {
-			keys[e.getKeyCode()] = false;
-		}
+
 	}
 
-	public void keyTyped(KeyEvent e) {}
+	public void keyTyped(KeyEvent e) {
+
+	}
 
 	public boolean isDown(int n) {
-
+		//this will just check if we pressed any key
 		if (n >= 0 && n < keys.length) {
-			return keys[n];
+			if(keys[n]){
+				keys[n]=false;
+				return true;
+			}
 		}
-		
 		return false;
 	}
 }

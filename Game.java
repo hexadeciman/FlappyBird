@@ -13,8 +13,10 @@ public class Game {
     public void update(){
     	bird.update();
 
+        //if we press any key .. we fly
         if (keyboard.isDown(KeyEvent.VK_SPACE)) {
-            System.out.println("space is down!");
+                    bird.gravity=-2;
+                    System.out.println(bird.gravity);
         }
     }
 }
