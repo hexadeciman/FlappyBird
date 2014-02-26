@@ -1,0 +1,13 @@
+- New Background
+- New Tubes Elements
+- Collision with the floor
+- Tubes Movements
+- Tubes Spawning
+- Created a simple script to recompile the code and run it.. run.sh
+
+Future Tasks: 
+I will add some comments and clean the code a bit.
+I will create a good ReadMe file
+Continue the project
+
+Main issue: Images doesn't seem to load every time .. it's kind of random we should find a fix for this.. 
